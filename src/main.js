@@ -13,9 +13,7 @@ const app = require('./app')
 //   cert: fs.readFileSync(path.join(__dirname, '/ssl/localhost.pem')),
 // }
 
-https.createServer(app).listen(PORT, () => {
-  console.log(`The Express server is listening at port: ${PORT}`)
-})
-// app.listen(PORT, () => {
+https.createServer(app)
+// https.createServer(options, app).listen(PORT, () => {
 //   console.log(`The Express server is listening at port: ${PORT}`)
 // })
