@@ -4,8 +4,7 @@
   },
   "scripts": {
     "test": "jest",
-    "server": "node src/main.js",
-    "heroku-prebuild":"npm install"
+    "server": "node src/main.js"
   },
   "devDependencies": {
     "@types/node": "^15.0.0",
