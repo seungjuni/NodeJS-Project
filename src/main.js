@@ -8,12 +8,12 @@ const fs = require('fs')
 const { PORT } = require('./common')
 const app = require('./app')
 
-const options = {
-  key: fs.readFileSync(path.join(__dirname, '/ssl/localhost-key.pem')),
-  cert: fs.readFileSync(path.join(__dirname, '/ssl/localhost.pem')),
-}
+// const options = {
+//   key: fs.readFileSync(path.join(__dirname, '/ssl/localhost-key.pem')),
+//   cert: fs.readFileSync(path.join(__dirname, '/ssl/localhost.pem')),
+// }
 
-https.createServer(options, app).listen(PORT, () => {
+https.createServer(app).listen(PORT, () => {
   console.log(`The Express server is listening at port: ${PORT}`)
 })
 // app.listen(PORT, () => {
