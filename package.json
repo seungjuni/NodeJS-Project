@@ -4,7 +4,7 @@
   },
   "scripts": {
     "test": "jest",
-    "server": "node src/main.js",
+    "server": "nodemon src/main.js",
     "heroku-prebuild":"npm install"
   },
   "devDependencies": {
